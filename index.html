@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Assets/img/logo.png" rel="shortcut icon" />
+    <title>Cafe Coral</title>
+    <link href="./Assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f0b27d4993.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/fadin"></script>
+</head>
+<body>
+<!----------------------------loading page---------------------->
+    <div class="loader">
+        <img src="./Assets/img/loader.gif" class="loader-gift">
+    </div>
+<!----------------------------header logo and name---------------------->
+    <section class="body">
+        <div class="header">
+            <a class="logo" href="#">
+                <img src="./Assets/img/logo.png"  class="logo-img">
+                <h1  class="name">Cafe Coral</h1>
+            </a>
+    <!----------------------------navbar---------------------->
+            <nav class="navbar">
+                <a href="#home-page" class="item">Home<span></span></a>
+                <a href="#menu" class="item">Menu<span></span></a>
+                <a href="#about-us-part" class="item">About Us<span></span></a>
+                <a href="#about-coffee" class="item">Blog<span></span></a>
+                <a href="#slideshow-container" class="item">Gallery<span></span></a>
+                <a href="#contact" class="item">Contact<span></span></a>
+
+            </nav>
+    <!----------------------------header icons---------------------->
+            <div class="icons">
+                <a href="./login.html" target="_blank"><i class="fa-solid fa-user"  ></i></a>
+                <a ><i class="fa-solid fa-magnifying-glass" id="search-btn"></i></a>
+                <a ><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></a>
+                <a ><i class="fa-solid fa-bars" id="menu-btn"></i></a>
+            </div>
+            <div class="search-form">
+                <input type="search" id="search-box" onkeyup="myFunction()" placeholder="search here...">
+                <ul id="myUL">
+                    <li><a href="#box fade item cappuccino">Cappuccino</a></li>
+                    <li><a href="#box fade item turkish">Turkish Coffee</a></li>
+                    <li><a href="#box fade item americano">Americano</a></li>
+                    <li><a href="#box fade item espresso">Espresso</a></li>
+                    <li><a href="#box fade item hot chocolate">Hot choclate</a></li>
+                    <li><a href="#box fade item latte">Latte</a></li>
+                    <li><a href="#box fade item carrot">Carrot cake</a></li>
+                    <li><a href="#box fade item cheeze">Cheeze cake</a></li>
+                    <li><a href="#box fade item chocolate">Chocolate cake</a></li>
+                    <li><a href="#box fade item pancakes">Pancakes</a></li>
+                    <li><a href="#box fade item red velvet">Red velvet</a></li>
+                    <li><a href="#box fade item waffles">Waffles</a></li>
+                    <li><a href="#box fade item cocktail">Cocktail with apple slices</a></li>
+                    <li><a href="#box fade item turkish cocktail">Turkish cocktail with lemon slices</a></li>
+                    <li><a href="#box fade item grape">Grape juice</a></li>
+                    <li><a href="#box fade item ice">Ice tea with mint</a></li>
+                    <li><a href="#box fade item red">Red ice cocktail</a></li>
+                    <li><a href="#box fade item mohito">Mohito with mint</a></li>
+                </ul>
+                <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+            </div>
+    <!----------------------------shopping cart---------------------->
+            <div class="cart-items-container">
+                <h2 class="title">Your Cart</h2>
+                <div class="cart-content">
+                    
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button  type="button" class="btn-buy">Buy Now</button>
+                <i class="fa-solid fa-x" id="close-cart"></i>
+            </div> 
+        </div>
+    <!----------------------------home page---------------------->
+        <main class="home-page" id="home-page">
+    <!----------------------------lamp and light---------------------->
+                <div class ="lamp-light">
+                    <div class="lamps">
+                        <img  src="./Assets/img/lamp.png" class="lamp one">
+                        <img  src="./Assets/img/lamp.png" class="lamp two">
+                        <img  src="./Assets/img/lamp.png" class="lamp three">
+                    </div>
+                    <div class="lights">
+                        <img src="./Assets/img/light.png"  class="light one"  onload="lightOn()">
+                        <img src="./Assets/img/light.png"  class="light two" onload="lightOn()">
+                        <img src="./Assets/img/light.png"  class="light three" onload="lightOn()">
+                    </div>
+                </div>
+    <!----------------------------home page text---------------------->
+                <div class="home-page-text" >
+                    <p class="welcome-text">_.Welcome To._<br><span class="cafe-name">Cafe Coral</span></p>
+                </div>
+    <!----------------------------table set---------------------->
+                <div class="table-set">
+                    <img src="./Assets/img/table-set.png" class="table" >
+                    <img src="./Assets/img/table-set-crop.png" class="table-crop">
+                    <img src="./Assets/img/table-set-crop-two.png" class="table-crop-two">
+                </div>
+            
+        </main>
+    <!----------------------------menu---------------------->
+        <section class="menu" id="menu">
+            <h1 class="heading">.Menu.</h1>
+    <!----------------------------popular item-------------->
+
+    <!----------------------------coffee---------------------->
+            <h2 class="menu-header-one">-.-.-.Coffee.-.-.-<h2></h2>
+            <div class="box-container">
+                
+                <div class="box fade item cappuccino one" id="box fade item cappuccino">
+                    <img src="./Assets/img/appuccino-topped-with-chocolate-syrup.jpg" alt="cappucciono" class="cart-img">
+                    <h3 class="cart-product-title">Cappuccino</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item turkish two" id="box fade item turkish">
+                    <img src="./Assets/img/closeup-turkish-coffee-served-traditional-cup.jpg" alt="turkish coffe" class="cart-img">
+                    <h3 class="cart-product-title">Turkish Coffee</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item americano three" id="box fade item americano">
+                    <img src="./Assets/img/cup-americano-coffee-placed-newspaper.jpg" alt="americano" class="cart-img">
+                    <h3 class="cart-product-title">Americano</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item espresso four" id="box fade item espresso">
+                    <img src="./Assets/img/espresso.jpg" alt="espresso" class="cart-img">
+                    <h3 class="cart-product-title">Espresso</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item hot chocolate five" id="box fade item hot chocolate">
+                    <img src="./Assets/img/hot-chocolate-milk-kakao-foam.jpg" alt="hot chocolate" class="cart-img">
+                    <h3 class="cart-product-title">Hot Chocolate</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item latte six" id="box fade item latte">
+                    <img src="./Assets/img/latte-coffee-cup.jpg" alt="latte" class="cart-img">
+                    <h3 class="cart-product-title">Latte</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+            </div>
+    <!----------------------------cake---------------------->
+            <h2 class ="menu-header-two">-.-.-.Cake.-.-.-</h2>
+            <div class="box-container-two">
+                <div class="box fade item carrot one" id="box fade item carrot">
+                    <img src="./Assets/img/carrot-cake.jpg" alt="carrot-cake" class="cart-img">
+                    <h3 class="cart-product-title">Carrot Cake</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon" ></i>
+                </div>
+                <div class="box fade item cheeze two" id="box fade item cheeze">
+                    <img src="./Assets/img/cheeze cake.jpg" alt="cheeze cake" class="cart-img">
+                    <h3 class="cart-product-title">Cheeze Cake</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item chocolate three" id="box fade item chocolate">
+                    <img src="./Assets/img/chocolate -cake.jpg" alt="chocolate -cake" class="cart-img">
+                    <h3 class="cart-product-title">Chocolate Cake</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item pancakes four" id="box fade item pancakes">
+                    <img src="./Assets/img/pancakes.jpg" alt="pancakes" class="cart-img">
+                    <h3 class="cart-product-title">Pancakes</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item red velvet five" id="box fade item red velvet">
+                    <img src="./Assets/img/red-velvet.jpg" alt="red-velvet" class="cart-img">
+                    <h3 class="cart-product-title">Red Velvet</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon" class="cart-img"></i>
+                </div>
+                <div class="box fade item waffle six" id="box fade item waffles">
+                    <img src="./Assets/img/waffles.jpg" alt="waffles" class="cart-img">
+                    <h3 class="cart-product-title">Waffles</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+            </div>
+    <!----------------------------cold drink---------------------->   
+            <h2 class="menu-header-three">-.-.-.Cold Drink.-.-.-<h2></h2>
+            <div class="box-container-three">
+                
+                <div class="box fade item cocktail one" id="box fade item cocktail">
+                    <img src="./Assets/img/cocktail-with-apple-slices.jpg" alt="cocktail-with-apple-slices" class="cart-img">
+                    <h3 class="cart-product-title ">Cocktail with apple slices</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item turkish cocktail two" id="box fade item turkish cocktail">
+                    <img src="./Assets/img/cocktail-with-lemon-slices-ice-cubes-mint.jpg" alt="cocktail-with-lemon-slices" class="cart-img">
+                    <h3 class="cart-product-title">Turkish Cocktail with lemon slices</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item grape three" id="box fade item grape">
+                    <img src="./Assets/img/grape-juice-with-grape-slices-ice-cubes-mint-leaves.jpg" alt="grape-juice" class="cart-img">
+                    <h3 class="cart-product-titlee">Grape juice</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item ice four" id="box fade item ice">
+                    <img src="./Assets/img/ice-tea-with-mint.jpg" alt="ice-tea-with-mint"  class="cart-img">
+                    <h3 class="cart-product-title">Ice tea with mint</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item red five" id="box fade item red">
+                    <img src="./Assets/img/red-iced-cocktail-table.jpg" alt="red-iced-cocktail" class="cart-img">
+                    <h3 class="cart-product-title">Red iced cocktail</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+                <div class="box fade item mohito six" id="box fade item mohito">
+                    <img src="./Assets/img/traditional-mojito-with-ice-mint-table.jpg" alt="mohito-with-ice-mint" class="cart-img">
+                    <h3 class="cart-product-title">Mohito with ice mint</h3>
+                    <div class="cart-price">$15.99</div>
+                    <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+                </div>
+            </div>
+        </section>
+    <!----------------------------about us ---------------------->
+        <div class="about-us-part" id="about-us-part" >
+                <img src="./Assets/img/about us.jpg" class="about us">
+                <p class="about-text" >About Us<br>There’s no better way to start your day than with a cup of
+                        coffee and a delicious breakfast from The Cafe Coral. TheSpecialty coffees,
+                        a small business vibe, and friendly service make all three popular spots
+                        in the area.
+                </p>
+        </div>
+    <!------------------------------about coffee----------------->
+        <div class="about-coffee" id="about-coffee">
+            <div class="coffee-text">
+                <h2>
+                    about coffee
+                </h2>
+                <p class="coffee-text-p">
+                    Coffee traces its origin to a genus of plants known as Coffea.
+                    Within the genus there are over 500 genera and 6,000 species
+                    of tropical trees and shrubs. Experts estimate that there are
+                    anywhere from 25 to 100 species of coffee plants.
+
+                    The genus was first described in the 18th century by the 
+                    Swedish botanist, Carolus Linneaus, who also described Coffea
+                    Arabica in his Species Plantarum in 1753. Botanists have 
+                    disagreed ever since on the exact classification, since coffee
+                    plants can range widely. They can be small shrubs to tall trees,
+                    with leaves from one to 16 inches in size, and in colors from 
+                    purple or yellow to the predominant dark green.
+            
+                </p>
+                <button  class="learn-more-btn"><a href="https://www.ncausa.org/About-Coffee/What-is-Coffee" target="_blank">Learn more</a></button>
+            </div>
+            <div class="container">
+                <div class="coffee-header">
+                <div class="coffee-header__buttons coffee-header__button-one"></div>
+                <div class="coffee-header__buttons coffee-header__button-two"></div>
+                <div class="coffee-header__display"></div>
+                <div class="coffee-header__details"></div>
+                </div>
+                <div class="coffee-medium">
+                <div class="coffe-medium__exit"></div>
+                <div class="coffee-medium__arm"></div>
+                <div class="coffee-medium__liquid"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                <div class="coffee-medium__cup"></div>
+                </div>
+                <div class="coffee-footer"></div>
+            </div>
+        </div>
+    <!----------------------------gallery---------------------->
+        <div class="slider" id="slideshow-container">
+            <img id="img-1" src="./Assets/img/slide-show-img1.jpg" alt="Image 1"/>
+            <img id="img-2" src="./Assets/img/slide-show-img2 (1).jpg" alt="Image 2"/>
+            <img id="img-3" src="./Assets/img/table-set-dinning-table.jpg" alt="Image 3"/>
+        </div>
+        <div class="navigation-button">
+            <span class="dot act" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+        </div>
+
+    <!----------------------------contact---------------------->
+        <div class="contact" id="contact" >
+            <h2 class="top-text">CONTACT <span> US</span></h2>
+            <div class="row">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133574.12545866644!2d55.15278635191363!3d25.104729628818752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1685227957246!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!----------------------------contact form---------------------->
+                <form action="" >
+                    <h3 class="get-in-touch">Get in touch</h3>
+                    <div class="inputBox name">
+                        <i class="fa fa-user-o" aria-hidden="true"id="icons" ></i>
+                        <input type="text" placeholder="name">
+                    </div>
+                    <div class="inputBox email">
+                        <i class="fa fa-envelope-o" aria-hidden="true"id="icons"></i>
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="inputBox number">
+                        <i class="fa fa-phone" aria-hidden="true" id="icons"></i>
+                        <input type="tel" placeholder="number">
+                    </div>
+                    <div class="inputBox message">
+                        <input type="text" placeholder="Message">
+                    </div>
+                    <input type="submit" value="contact now" class="btn">
+                </form>
+            </div>
+        </div>
+    <!----------------------------footer---------------------->
+        <section class="footer">
+            <div class="share">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+            </div>
+            <div class="links">
+                <a href="#home-page">home</a>
+                <a href="#menu">menu</a>
+                <a href="#about-us-part">about us</a>
+                <a href="#slideshow-container">Gallery</a>
+                <a href="#about-coffee" class="item">Blog</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="credit">Created by <span>Marjan Seyedi</span></div>
+        </section>
+    </section>
+    <script src="./Assets/js/script.js"></script>
+
+</body>
+</html>
